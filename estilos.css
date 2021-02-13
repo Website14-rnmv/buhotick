@@ -1,0 +1,588 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Julius Sans One', sans-serif;
+}
+body{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar{
+    width: 0px;
+  
+    
+    
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+
+/*---------------------------------------------------CABECERA----------------------------------------*/
+header{
+  width: 100%;
+  margin:0;
+  padding: 0;
+    height: 100vh;
+    background: #272727;
+    background: linear-gradient(to right, hsla(0, 0%, 14%, 0.459), hsla(14, 27%, 28%, 0.664)), url(imagenes/buho.jpg);    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 14%, 0.459), hsla(14, 27%, 28%, 0.664)), url(imagenes/buho.jpg);
+   
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-attachment: fixed;
+
+}
+nav{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav ul{
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+}
+nav ul li{
+    margin: 0 30px;
+    display: inline-block;
+}
+nav ul li a{
+    color: white;
+    font-weight: 700;
+    font-size: 11px;
+}
+nav ul li a:hover{
+    color:orange;
+    text-decoration: none;
+    transition: .5s;
+
+}
+
+.text{
+    position: relative;
+    top: 30%;
+    text-align: center;
+    color: white;
+}
+.text h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+.text h1{
+    font-size: 60px;
+}
+.letraslogo{
+    width:250px;
+}
+.text p{
+    font-size: 15px;
+}
+.text a{
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid white;
+    font-size: 15px;
+}
+.text a:hover{
+    color: white;
+    background: linear-gradient(to bottom, hsla(0, 7%, 17%, 0.459), hsla(14, 54%, 39%, 0.664));    /* Chrome 10-25, Safari 5.1-6 */
+
+    text-decoration: none;
+    font-size: 16px;
+    transition: .4s;
+}
+ .title_nombre:before{
+    content:"";
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0%;
+    bottom:60%;
+    transition: .5s;
+}
+
+ .title_nombre:after{
+    content:"";
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    right: 0%;
+    bottom:60%;
+    transition: .5s;
+}
+
+/*---------------------------------------------------SOBREMI ----------------------------------------*/
+
+.sobre_mi{
+    width: 100%;
+    padding: 10% 5%;
+    background: linear-gradient(to bottom, hsla(0, 2%, 22%, 0.459), hsla(0, 0%, 0%, 0.664)), url(imagenes/luna-min.jpg);    /* Chrome 10-25, Safari 5.1-6 */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    
+}
+
+.texto_mi{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+
+}
+.wid{
+    width: 20%;
+    margin: auto;
+}
+.wid h1{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.wid p{
+    font-size: 11px;
+    font-weight: 200;
+   
+    
+}
+
+.sobre_mi:hover .colorTitle{
+    color: orange;
+    transition: .5s;
+    
+}
+.sobre_mi:hover .titleizq{
+    color: orange;
+    transition: .5s;
+    
+}
+.izq{
+    text-align: right;
+}
+.parrafos{
+    position: relative;
+    
+    
+}
+.parrafos::before{
+    content:"";
+    display: block;
+    transition:  .5s;
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: .5s;
+   
+}
+.parrafos::after{
+    content:"";
+    display: block;
+    position: absolute;
+    left:-20%;
+    bottom: 0;
+    height: 0;
+    width: 3px;
+    background-color: white;
+    transition: .5s;
+    
+}
+.sobre_mi:hover .parrafos:before{
+    background-color: orange;
+    width: 70%;
+}
+.sobre_mi:hover .parrafos:after{
+    background-color: orange;
+    height: 50%;
+}
+
+.parrafos2{
+    position: relative;
+    
+    
+}
+.parrafos2::before{
+    content:"";
+    display: block;
+    transition:  .5s;
+    position: absolute;
+    right: 0;
+    top: -10%;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .5s;
+   
+}
+.parrafos2::after{
+    content:"";
+    display: block;
+    position: absolute;
+    right:-20%;
+    top: 0;
+    height: 0;
+    width: 3px;
+    background-color: white;
+    transition: .5s;
+    
+}
+.sobre_mi:hover .parrafos2:before{
+    background-color: orange;
+    width: 70%;
+}
+.sobre_mi:hover .parrafos2:after{
+    background-color: orange;
+    height: 50%;
+}
+
+
+/*---------------------------------------------------SOBREMI ----------------------------------------*/
+
+.habilidades{
+    width: 100%;
+    margin: 0;
+    padding: 5% 0;
+    background: linear-gradient(to bottom, hsla(0, 0%, 7%, 0.842), hsla(0, 7%, 8%, 0.781)), url(imagenes/estrellas-min.jpg);    /* Chrome 10-25, Safari 5.1-6 */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.habilidades h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.habilidades p{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    
+
+}
+.wid{
+    text-align: center;
+}
+.wid h5{
+    color: orange;
+    font-size: 15px;
+}
+.wid i{
+    color: orange;
+    font-size: 30px;
+    padding: 20px 0;
+}
+p{
+    color: #ccc;
+}
+
+
+/*-------------CONTACTO-------------------------------*/
+.contacto{
+    width: 100%;
+    margin: 0;
+    padding: 10% ;
+    background: linear-gradient(to bottom, hsla(0, 0%, 7%, 0.781), hsla(0, 7%, 8%, 0.781)), url(imagenes/troncos-min.jpg);    /* Chrome 10-25, Safari 5.1-6 */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mensaje{
+    width: 45%;
+    padding: 5%;
+    
+}
+.mensaje h2{
+    color: white;
+    font-size: 40px;
+}
+.mensaje p{
+    color: rgb(194, 194, 194);
+    font-size: 10px;
+    text-align: justify;
+}
+form{
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+form .items{
+    width: 100%;
+    margin: 3% 0;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    outline: none;
+    border:1px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 10px;
+    font-weight: 800;
+    color: white;
+}
+
+.items:focus{
+    border: 1px solid orange;
+    transition: .4s;
+}
+.botoncito{
+    padding: 5px;
+    width: 100%;
+    
+    outline: none;
+    background-color: chocolate;
+    font-size: 12px;
+    border:none;
+    font-weight: 800;
+    margin:2% 0;
+}
+.botoncito:hover{
+    
+    transition: .4s;
+    background-color: rgb(185, 97, 34);
+}
+/*******************************************REDES SOCIALES***************************/
+
+.content_redes a img{
+    width: 13px;
+    margin: 0 15px;
+    
+}
+
+/*-------------FOOTER-------------------------------*/
+footer{
+    width: 100%;
+    margin: 0;
+    
+    padding: 0;
+    background: linear-gradient(to bottom, hsla(0, 7%, 8%, 0.781), hsla(0, 3%, 6%, 0.568)), url(imagenes/troncos-min.jpg);    /* Chrome 10-25, Safari 5.1-6 */
+    background-position: center;
+    background-size: cover;
+
+}
+.foot{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+.foot img{
+    width: 130px;
+}
+.foot h4{
+    color: white;
+    padding: 0 20px;
+    margin: 0 20px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+
+    font-size: 12px;
+}
+
+
+
+
+@media screen and (max-width: 800px){
+    
+
+/********************************************HEADER****************************************/
+
+nav{
+    background-color: rgba(0, 0, 0, 0.514);
+}
+nav ul{
+    margin: 3%;
+    
+}
+nav ul li a{
+    font-size: 11px;
+}
+header{
+    height: 600px;
+}
+.text{
+    margin:2% ;
+    top: 28%;
+}
+.text h1{
+    font-size: 35px;
+}
+.text p{
+    font-size: 10px;
+}
+.text a{
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid white;
+    font-size: 11px;
+}
+.text a:hover{
+    font-size: 12px;
+}
+.text h1::before{
+    visibility: hidden;
+}
+.text h1::after{
+    visibility: hidden;
+}
+.letraslogo{
+    width:120px;
+}
+
+/********************************************SOBRE MI****************************************/
+
+.texto_mi{
+    flex-direction: column;
+}
+.wid{
+    width: 80%;
+}
+.wid h1{
+    font-size: 20px;
+    color: orange;
+    text-align: center;
+}
+.wid p{
+    font-size: 11px;
+    text-align: center;
+}
+.sobre_mi:hover .parrafos:after{
+    display: none;
+}
+.sobre_mi:hover .parrafos:before{
+    
+    display: none;
+}
+.sobre_mi:hover .parrafos2:after{
+    
+    display: none;
+}
+.sobre_mi:hover .parrafos2:before{
+    display: none;
+}
+
+/********************************************CONOCIMIENTOS****************************************/
+.habilidades{
+    padding: 5%;
+}
+.habilidades h1{
+    margin: 5% 0;
+}
+.habilidades p{
+    font-size: 11px;
+}
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:5px;
+    
+
+}
+
+
+
+
+/********************************************FORMULARIO****************************************/
+
+.contacto{
+    flex-direction: column;
+}
+.mensaje{
+    width: 100%;
+}
+.mensaje h2{
+    font-size: 25px;
+    text-align: center;
+}
+.mensaje p {
+    font-size: 11px;
+}
+form{
+    width: 90%;
+}
+form .items{
+    font-size: 9px;
+    padding: 10px;
+}
+form .botoncito{
+    font-size: 13px;
+    margin: 3% 0;
+}
+
+/*REDES SOCIALES*/
+
+.content_redes{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin:0;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+/********************************************FOOTER****************************************/
+footer{
+    padding: 0;
+    margin: 0;
+   
+    
+}
+.foot img{
+    width: 50px;
+}
+.foot h4{
+    border: none;
+    font-size: 9px;
+}
+.foot{
+    flex-direction: column;
+    margin-bottom: 10%;
+    padding-bottom:5% ;
+}
+
+
+}
